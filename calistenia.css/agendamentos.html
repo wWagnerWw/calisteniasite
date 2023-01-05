@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>benefícos da calistenia</title>
+	<meta charset="utf-8">
+	<meta name="author" content="wagner souza"/>
+	<meta name="keywords" content="calistenia, barra">
+	<link rel="stylesheet" type="text/css" href="estilo.css"/>
+</head>
+<body>
+	<header>
+		<img src="ing/design.png" alt="banner"/>
+	</header>
+		<nav>
+		<a class="a-menu" href="index.html">HOME</a>
+		<a class="a-menu" href="index.html/#secao-beneficios">BENEFÍCIOS</a>
+		<a class="a-menu" href="index.html/#secao-modalidade">MODALIDADES</a>
+		<a class="a-menu" href="index.html/#secao-treions">TREINO</a>
+		<a class="a-menu" href="#">AGENDAMENTO</a>
+	</nav>
+<section id="pag-agendamentos">
+	<h1> Agendamentos</h1>
+
+		<p>Agende uma aula experimental grátis!</p>
+		<form name="frm-agendamento" method="GET" action="">
+			
+			<Label for="nome">Nome:</Label>
+			<input type="text" name="nome" id="nome" size="100"
+			maxlength="100" placeholder="nome completo" required/>
+			
+			<Label for="Email">Email:</Label>
+			<input type="Email" name="Email" id="Email" size="100"
+			maxlength="100" placeholder="Email completo" required/>
+			
+			<Label for="Senha">Senha:</Label>
+			<input type="password" name="Senha" id="Senha" size="100"
+			maxlength="100" placeholder="Somente numeros" required/>
+
+			<Label for="cel">Cell:</Label>
+			<input type="tel" name="cel" id="cel" size="100"
+			maxlength="100" placeholder="(99)99999-9999)" pattern="^\(?\d{2}\)\d{5}[-\s]\d{4}.*?$" />
+
+			<label for="nivel">Nível</label>
+			<select id="nivel" name="nivel">
+				<option value=""> selecione...</option>
+				<option value="basico"> básico</option>
+				<option value="intermediario"> intermediario</option>
+				<option value="avancado"> avançado</option>
+
+			</select></br>
+
+			<fieldset>
+				<legend>Gênero:</legend>
+
+				<input type="radio" name="genero" value="masc" id="masc"/>
+				<label for="masc">Masculino</label></br>
+
+				<input type="radio" name="genero" value="fem" id="fem"/>
+				<label for="fem">Feminino</label></br>
+
+			</fieldset>
+			<fieldset>
+				<legend>Atividades</legend>
+				<input type="checkbox" name="atividades" value="musculacao" id="musculacao" />
+				<label for="musculacao">musculação</label></br>
+
+				<input type="checkbox" name="atividades" value="pilates" id="pilates" />
+				<label for="musculacao">pilates</label></br>
+
+				<input type="checkbox" name="atividades" value="corrida" id="corrida" />
+				<label for="musculacao">corrida</label></br>
+
+			</fieldset>
+			<label for="msg">mensagem</label>
+			<textarea id="msg" cols="52" rows="4">
+			</textarea>
+
+			<input type="submit" name="bt-enviar" value="Agendar"/>
+			<input type="reset" name="bt-limpar" value="Cancelar"/>
+
+		</form>
+	</section>
+	<footer>
+		<p align="center">Desenvolvido por <a href="http://instragram.com" target="_blank">wagner</a> - 2022</p>
+	</footer>
+
+	</body>
+</html>
